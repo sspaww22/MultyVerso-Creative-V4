@@ -100,7 +100,7 @@ local garages = {
 	[148] = { ["name"] = "Impound", ["payment"] = false, ["public"] = true },
 	[149] = { ["name"] = "Garage", ["payment"] = false, ["public"] = true },
 	[151] = { ["name"] = "Kart", ["payment"] = false, ["public"] = true },
-	[152] = { ["name"] = "Garage", ["payment"] = false, ["public"] = true },
+	[152] = { ["name"] = "Tacos", ["payment"] = false, ["public"] = true },
 	[153] = { ["name"] = "Taxiaereo", ["payment"] = false, ["public"] = true },
 	[154] = { ["name"] = "Garbageman", ["payment"] = false, ["public"] = true },
 	[155] = { ["name"] = "Garbageman", ["payment"] = false, ["public"] = true },
@@ -421,6 +421,9 @@ local workgarage = {
 	},
 	["Taxiaereo"] = {
 		"maverick"
+	},
+	["Tacos"] = {
+		"taco"
 	}
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -669,10 +672,10 @@ function cRP.vehicleLock()
 
 				if vehLock == 1 then
 					TriggerClientEvent("Notify",source,"unlocked","Veículo destrancado.",3000)
-					TriggerClientEvent("sound:source",source,"unlock",0.5)
+					TriggerClientEvent("sounds:source",source,"unlock",0.5)
 				else
 					TriggerClientEvent("Notify",source,"locked","Veículo trancado.",3000)
-					TriggerClientEvent("sound:source",source,"lock",0.5)
+					TriggerClientEvent("sounds:source",source,"lock",0.5)
 				end
 
 				if not vRPclient.inVehicle(source) then
