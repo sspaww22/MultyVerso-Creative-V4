@@ -99,7 +99,6 @@ end
 local blips = {
 	{ 1148.78,-1532.84,35.39,80,38,"Hospital",0.5 },
 	{ -247.42,6331.39,32.42,80,38,"Hospital",0.5 },
-	{ 859.4,-2363.23,30.0,315,8,"Encontro de Carros",0.4 },
 	{ 55.43,-876.19,30.66,357,65,"Garagem",0.6 },
 	{ 598.04,2741.27,42.07,357,65,"Garagem",0.6 },
 	{ -136.36,6357.03,31.49,357,65,"Garagem",0.6 },
@@ -206,7 +205,7 @@ local blips = {
 	{ -428.56,-1728.33,19.79,467,11,"Reciclagem",0.6 },
 	{ -741.56,5594.94,41.66,36,62,"Teleférico",0.6 },
 	{ 454.46,5571.95,781.19,36,62,"Teleférico",0.6 },
-	{ -191.61,-1154.2,23.05,357,9,"Impound",0.6 },
+	{ 409.41,-1623.11,29.3,357,9,"Impound",0.6 },
 	{ 1724.84,3715.31,34.22,357,9,"Impound",0.6 },
 	{ -364.24,6071.16,31.52,357,9,"Impound",0.6 },
 	{ -1178.37,-2845.97,13.93,402,26,"Mecânica",0.7 },
@@ -218,7 +217,6 @@ local blips = {
 	{ -1144.02,-1989.42,13.16,402,26,"Mecânica",0.7 },
 	{ 1178.0,2657.85,37.98,402,26,"Mecânica",0.7 },
 	{ 116.38,6620.89,31.88,402,26,"Mecânica",0.7 },
-	{ -49.34,-1041.79,28.21,402,26,"Mecânica",0.7 },
 	{ -594.85,2090.27,131.6,617,62,"Minerador",0.6 },
 	{ 1322.93,-1652.29,52.27,75,13,"Loja de Tatuagem",0.5 },
 	{ -1154.42,-1425.9,4.95,75,13,"Loja de Tatuagem",0.5 },
@@ -227,7 +225,7 @@ local blips = {
 	{ 1864.07,3747.9,33.03,75,13,"Loja de Tatuagem",0.5 },
 	{ -293.57,6199.85,31.48,75,13,"Loja de Tatuagem",0.5 },
 	{ 405.92,6526.12,27.73,89,62,"Colheita",0.4 },
-	{ 12.33,-1607.92,32.84,79,62,"Tacos",0.5 },
+	{ -1183.86,-884.57,13.99,106,62,"BurgerShot",0.5 },
 	{ -162.8,-2130.61,16.7,483,62,"Kartodromo",0.6 },
 	{ 895.36,-179.36,74.7,198,62,"Taxista",0.5 },
 	{ -1031.05,-2965.67,13.95,307,62,"Táxi Aéreo",0.7 },
@@ -427,6 +425,7 @@ Citizen.CreateThread(function()
 		RemoveAllPickupsOfType("PICKUP_WEAPON_SAWNOFFSHOTGUN")
 
 		HideHudComponentThisFrame(1)
+		
 		HideHudComponentThisFrame(3)
 		HideHudComponentThisFrame(4)
 		HideHudComponentThisFrame(5)
@@ -438,9 +437,13 @@ Citizen.CreateThread(function()
 		HideHudComponentThisFrame(11)
 		HideHudComponentThisFrame(12)
 		HideHudComponentThisFrame(13)
+		
 		HideHudComponentThisFrame(15)
+		
 		HideHudComponentThisFrame(17)
 		HideHudComponentThisFrame(18)
+		
+		
 		HideHudComponentThisFrame(21)
 		HideHudComponentThisFrame(22)
 
@@ -493,7 +496,7 @@ Citizen.CreateThread(function()
 	SetRadarZoom(1100)
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
--- THREADGLOBAL - 10
+-- THREADGLOBAL:REMOVEVEHICLESFROMSPAWN
 -----------------------------------------------------------------------------------------------------------------------------------------
 Citizen.CreateThread(function()
 	while true do
@@ -605,10 +608,6 @@ local ipList = {
 		coords = { 338.8661,-582.8466,29.63187 } -- Pillbox
 	},{
 		coords = { 311.2546,-592.4204,42.32737 } -- Pillbox
-	},{
-		coords = { -189.059,-1164.32,24.1877 } -- Impound
-	},{
-		coords = { -37.1869,-1050.44,27.58956 } -- Bennys
 	},{
 		coords = { -675.3189,5836.144,17.70478 } -- Hunting
 	},{
@@ -956,18 +955,4 @@ Citizen.CreateThread(function()
 
 		Citizen.Wait(timeDistance)
 	end
-end)
------------------------------------------------------------------------------------------------------------------------------------------
--- RICHPRESENCE
------------------------------------------------------------------------------------------------------------------------------------------
-Citizen.CreateThread(function()
-    while true do
-		SetDiscordAppId(848976568952029184)
-		SetDiscordRichPresenceAsset("gringapresence")
-		SetDiscordRichPresenceAssetSmall("gringa")
---		SetRichPresence(user_id.." - Gringa Roleplay")
-		SetDiscordRichPresenceAssetText("Gringa Roleplay")
-		SetDiscordRichPresenceAssetSmallText("Gringa Roleplay")
-        Citizen.Wait(60000)
-    end
 end)
