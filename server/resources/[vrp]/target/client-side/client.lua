@@ -340,7 +340,7 @@ Citizen.CreateThread(function()
 			}
 		}
 	})
-	
+	-- entrar em comercio de venda de droga -- 
 	AddCircleZone("drugsToggle",vector3(-1174.62,-898.65,13.98),0.75,{
 		name = "drugsToggle",
 		heading = 227.54
