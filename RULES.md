@@ -1,3 +1,5 @@
+Segue umas ideias de regras de cidade para que possa ser utilizada (apenas ideiais)
+
 [ ANTI-ROLEPLAY ]
 1: Proibido efetuar qualquer tipo de chamado através do celular e cometer atividades ilegais contra os mesmos.
 2: Reféns não podem ter envolvimento com os sequestradores, ao efetuar um sequestro saiba que os responsáveis pelo

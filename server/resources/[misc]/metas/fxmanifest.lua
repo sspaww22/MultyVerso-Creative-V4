@@ -37,3 +37,7 @@ data_file "WEAPONINFO_FILE_PATCH" "metas-side/weapons_pumpshotgun_mk2.meta"
 data_file "WEAPONINFO_FILE_PATCH" "metas-side/weapons_smg_mk2.meta"
 data_file "WEAPONINFO_FILE_PATCH" "metas-side/weapons_specialcarbine_mk2.meta"
 data_file "WEAPONINFO_FILE_PATCH" "metas-side/weaponspecialcarbine.meta"
+
+-- Lembrando que o MK2 carabine se caso colocar script de stress ao segurar a arma lembrar que ele buga--
+
+-- Armas previamente configurada sm head shot -- 
