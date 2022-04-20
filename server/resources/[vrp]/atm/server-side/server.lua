@@ -63,6 +63,9 @@ function cRP.bankWithdraw(amount)
 	local user_id = vRP.getUserId(source)
 	if user_id then
 
+
+		-- Segue evento de notificação caixa -- 
+		-- Evento criado por spaww22 --
 		local getInvoice = vRP.getInvoice(user_id)
 		if getInvoice[1] ~= nil then
 			TriggerClientEvent("Notify",source,"amarelo","Encontramos faturas pendentes.",5000)
