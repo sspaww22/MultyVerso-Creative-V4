@@ -81,6 +81,8 @@ RegisterCommand("globalFunctions",function(source,args)
 		if GetEntityHealth(ped) > 101 then
 			menuOpen = true
 
+			-- Pode ser trocada nomeclatura para melhor entendimento -- 
+
 			exports["dynamic"]:AddButton("Remover","Remover a roupa atual.","player:outfitFunctions","remover","outfit",true)
 
 			exports["dynamic"]:AddButton("Desmanche","Listagem dos veículos.","dismantle:invokeDismantle","","others",true)
