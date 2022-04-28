@@ -6,7 +6,7 @@ local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 vRPS = Tunnel.getInterface("vRP")
 -----------------------------------------------------------------------------------------------------------------------------------------
--- CONNECTION
+-- CONNECTION --  Existia uma falha ao sair de serviço realizar teste se normalizou -- 
 -----------------------------------------------------------------------------------------------------------------------------------------
 cRP = {}
 Tunnel.bindInterface("police",cRP)
@@ -103,7 +103,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 local inSelect = 1
 local inDeath = false
-local inPrison = false
+local inPrison = true
 local inTimer = GetGameTimer()
 local timeDeath = GetGameTimer()
 local coordsIntern = { 1679.94,2513.07,45.56 }
